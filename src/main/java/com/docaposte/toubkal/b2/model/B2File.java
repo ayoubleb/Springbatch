@@ -1,6 +1,6 @@
-package com.barley.batch.model;
+package com.docaposte.toubkal.b2.model;
 
-public class WriterSO {
+public class B2File {
 
     private long id;
     private String fullName;

@@ -1,4 +1,4 @@
-package com.barley.batch.model;
+package com.docaposte.toubkal.b2.model;
 
 public class RecordSO {
 

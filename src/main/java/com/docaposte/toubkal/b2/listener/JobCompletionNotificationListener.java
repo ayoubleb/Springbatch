@@ -1,8 +1,8 @@
-package com.barley.batch.listener;
+package com.docaposte.toubkal.b2.listener;
 
 import java.util.List;
 
-import com.barley.batch.model.WriterSO;
+import com.docaposte.toubkal.b2.model.WriterSO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +34,6 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
                 writerSO.setRandomNum(rs.getString("random_num"));
                 return writerSO;
             });
-
             for (WriterSO writerSO : results) {
                 log.info("Found <" + writerSO + "> in the database.");
             }

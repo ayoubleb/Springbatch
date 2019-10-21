@@ -1,4 +1,4 @@
-group 'com.geeky.batch'
+group 'com.docaposte.toubkal.b2'
 version '1.0.0'
 
 apply plugin: 'java'
@@ -9,7 +9,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
-    baseName = 'spring-batch'
+    baseName = 'b2Sqeleton'
 }
 
 buildscript {
@@ -27,6 +27,7 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-batch')
+    compile 'org.springframework.boot:spring-boot-starter-web'
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('mysql:mysql-connector-java:5.1.38')
     testCompile('junit:junit')
